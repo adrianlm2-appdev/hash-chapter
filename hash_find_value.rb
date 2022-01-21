@@ -6,4 +6,16 @@
 
 sample_hash = {:a => 100, :b => 200, :c => 300, :d => 400, :e => rand(200), :f => 600, :g => 0 }
 
+keys = sample_hash.keys
+
 p "Enter an integer to find:"
+
+input = gets.chomp.to_i
+
+keys.each do |entry|
+  if sample_hash.fetch(entry).to_i == input
+    p input.to_s + " is under the key: " + entry.to_s + "."
+ else
+    p "Could not find the integer " + input.to_s
+ end
+end
