@@ -6,4 +6,5 @@ info = gets.chomp.split
 
 person1 = { :name => info[0], :age => info[1], :occupation => info[2] }
 
+p "\n" 
 p person1 
