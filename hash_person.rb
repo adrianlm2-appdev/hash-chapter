@@ -4,6 +4,6 @@ p "Enter a name, age, and occupation separated by spaces:"
 
 info = gets.chomp.split
 
-person1 = { :name => info[0], :age => info[1], :occupation => info[2] }
+person1 = { :name => info[0], :age => info[1].to_i, :occupation => info[2] }
 
 p person1
